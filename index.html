@@ -25,9 +25,18 @@
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
         
        <style>
-          .image:hover{
-             opacity: .7;
-         }
+/*BLUR*/
+.blur img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.blur img:hover {
+  -webkit-filter: blur(5px);
+}
           
        </style>
         
@@ -307,8 +316,9 @@
                    
                    <!-- ITEM -->
                         <div class="item scroll-animated" style="display:inline-block;">
-                          <img src = "assets/img/work/item-3.jpg" style="width:300px;height:300px;border-radius:50%;margin:15px;" alt="Avatar" class="image">
-
+                          <div class="blur pic">
+                          <img src = "assets/img/work/item-3.jpg" style="width:300px;height:300px;border-radius:50%;margin:15px;" alt="plane">
+                           </div>
                                     <!-- CONTAINER MID -->
 <!--                                     <div class="container-mid"> -->
 
