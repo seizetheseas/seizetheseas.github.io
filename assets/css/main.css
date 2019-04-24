@@ -245,7 +245,7 @@ button
     height: 100%;
 }
 
-.image-container 
+.image-container .background-img
 {
     position: absolute;
     z-index: 1;
